@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Merzouga 4x4 Excursion – Merzouga Best Activities</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/zuume" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="../index.html" class="nav-link" style="display:flex;align-items:center;text-decoration:none;">
+          <img src="../logo.png" alt="Merzouga Best Activities" class="logo-image" />
+          <span class="brand-name">Merzouga Best Activities</span>
+        </a>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="../index.html#home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="../index.html#activities" class="nav-link">Activities</a></li>
+        <li class="nav-item"><a href="../index.html#book" class="nav-link">Book Now</a></li>
+        <li class="nav-item"><a href="../index.html#reviews" class="nav-link">Reviews</a></li>
+        <li class="nav-item"><a href="../index.html#contact" class="nav-link">Contact Us</a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" style="background-image: url('../images/4x4-2.jpg');">
+      <div class="hero-content">
+          <h1 class="hero-title">Merzouga 4x4 Tour Excursion</h1>
+          <p class="hero-subtitle">Explore around Erg Chebbi dunes in comfort and style</p>
+      </div>
+      <div class="hero-overlay"></div>
+  </section>
+
+  <section class="activities">
+    <div class="container">
+      <div class="section-header">
+        <h2>Tour Options</h2>
+        <p>Comfortable 4x4 vehicles, expert drivers, and flexible itineraries tailored to your interests.</p>
+      </div>
+
+      <div class="activities-grid">
+        <div class="activity-card">
+          <div class="activity-image">
+            <img src="../images/half-day.png" alt="Half-Day 4x4 Tour" />
+          </div>
+          <div class="activity-content">
+            <h3>Half-Day 4x4 Tour</h3>
+            <p>Visit Khamlia (Gnawa music), fossils site, and a nomad family for tea. Ideal for a quick discovery.</p>
+            <div class="activity-actions">
+              <button class="book-button" onclick="navigateToBooking('merzouga-4x4-excursion')">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="activity-card">
+          <div class="activity-image">
+            <img src="/images/fullday.jpg" alt="Full-Day 4x4 Tour" />
+          </div>
+          <div class="activity-content">
+            <h3>Full-Day 4x4 Tour</h3>
+            <p>Extended exploration with viewpoints, seasonal lake (when present), and time for photography stops.</p>
+            <div class="activity-actions">
+              <button class="book-button" onclick="navigateToBooking('merzouga-4x4-excursion')">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="activity-card">
+          <div class="activity-image">
+            <img src="/images/Private-Custom-Tour.jpg" alt="Private Custom Tour" />
+          </div>
+          <div class="activity-content">
+            <h3>Private Custom Tour</h3>
+            <p>Design your own route with our local experts—culture, geology, or photography focus as you wish.</p>
+            <div class="activity-actions">
+              <button class="book-button" onclick="navigateToBooking('merzouga-4x4-excursion')">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Custom Booking Form -->
+  <section class="activities">
+    <div class="container">
+      <div class="custom-booking-form">
+        <div class="section-header">
+          <h2>Book Your 4x4 Excursion</h2>
+          <p>Explore the vast Sahara landscape in comfort and style</p>
+        </div>
+        
+        <div class="package-card">
+          <div class="package-header">
+            <h3 class="package-title">Half-Day 4x4 Tour</h3>
+            <div class="price-container">
+              <div class="original-price">€95</div>
+              <div class="discount-badge">20% OFF</div>
+              <div class="final-price">€76</div>
+            </div>
+          </div>
+          <ul class="package-features">
+            <li>4-hour guided tour</li>
+            <li>Khamlia village visit</li>
+            <li>Fossils site exploration</li>
+            <li>Nomad family tea ceremony</li>
+            <li>Comfortable 4x4 vehicle</li>
+            <li>Professional driver/guide</li>
+          </ul>
+          <button class="package-cta" onclick="navigateToBooking('merzouga-4x4-excursion')">Book Half-Day Tour</button>
+        </div>
+        
+        <div class="package-card">
+          <div class="package-header">
+            <h3 class="package-title">Full-Day 4x4 Tour</h3>
+            <div class="price-container">
+              <div class="original-price">€165</div>
+              <div class="discount-badge">20% OFF</div>
+              <div class="final-price">€132</div>
+            </div>
+          </div>
+          <ul class="package-features">
+            <li>8-hour comprehensive tour</li>
+            <li>Multiple scenic viewpoints</li>
+            <li>Seasonal lake visit (when present)</li>
+            <li>Extended photography stops</li>
+            <li>Traditional lunch included</li>
+            <li>Cultural immersion activities</li>
+          </ul>
+          <button class="package-cta" onclick="navigateToBooking('merzouga-4x4-excursion')">Book Full-Day Tour</button>
+        </div>
+        
+        <div class="package-card">
+          <div class="package-header">
+            <h3 class="package-title">Private Custom Tour</h3>
+            <div class="price-container">
+              <div class="original-price">€250</div>
+              <div class="discount-badge">20% OFF</div>
+              <div class="final-price">€200</div>
+            </div>
+          </div>
+          <ul class="package-features">
+            <li>Custom itinerary design</li>
+            <li>Private vehicle & guide</li>
+            <li>Flexible timing & route</li>
+            <li>Specialized focus (culture/geology/photo)</li>
+            <li>Premium lunch experience</li>
+            <li>Extended exploration time</li>
+          </ul>
+          <button class="package-cta" onclick="navigateToBooking('merzouga-4x4-excursion')">Book Private Tour</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Merzouga Best Activities. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../app.js"></script>
+</body>
+</html>
+
+

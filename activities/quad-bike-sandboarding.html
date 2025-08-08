@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quad Bike & Sandboarding – Merzouga Best Activities</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/zuume" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="../index.html" class="nav-link" style="display:flex;align-items:center;text-decoration:none;">
+          <img src="../logo.png" alt="Merzouga Best Activities" class="logo-image" />
+          <span class="brand-name">Merzouga Best Activities</span>
+        </a>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="../index.html#home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="../index.html#activities" class="nav-link">Activities</a></li>
+        <li class="nav-item"><a href="../index.html#book" class="nav-link">Book Now</a></li>
+        <li class="nav-item"><a href="../index.html#reviews" class="nav-link">Reviews</a></li>
+        <li class="nav-item"><a href="../index.html#contact" class="nav-link">Contact Us</a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" style="background-image: url('../images/quads.jpg');">
+      <div class="hero-content">
+          <h1 class="hero-title">Quad Bike & Sandboarding</h1>
+          <p class="hero-subtitle">Adrenaline-pumping adventures across the golden dunes</p>
+      </div>
+      <div class="hero-overlay"></div>
+  </section>
+
+  <section class="activities">
+    <div class="container">
+      <div class="section-header">
+        <h2>Packages</h2>
+        <p>From quick blasts to extended exploration, choose the pace and duration that suits your style.</p>
+      </div>
+
+      <div class="activities-grid">
+        <div class="activity-card">
+          <div class="activity-image">
+            <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?q=80&w=2069&auto=format&fit=crop" alt="60-min Quad Ride" />
+          </div>
+          <div class="activity-content">
+            <h3>60-min Quad Ride</h3>
+            <p>Perfect introduction to dune riding. Includes helmet, goggles, and guide.</p>
+            <div class="activity-actions">
+              <button class="book-button" onclick="navigateToBooking('quad-bike-sandboarding')">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="activity-card">
+          <div class="activity-image">
+            <img src="https://images.unsplash.com/photo-1546447147-3fc2b1d489fc?q=80&w=2069&auto=format&fit=crop" alt="120-min Quad + Sandboarding" />
+          </div>
+          <div class="activity-content">
+            <h3>120-min Quad + Sandboarding</h3>
+            <p>Extended trail plus sandboard session on the highest dunes in Merzouga.</p>
+            <div class="activity-actions">
+              <button class="book-button" onclick="navigateToBooking('quad-bike-sandboarding')">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="activity-card">
+          <div class="activity-image">
+            <img src="https://images.unsplash.com/photo-1534595038511-9f219fe0c979?q=80&w=2069&auto=format&fit=crop" alt="Private Adventure" />
+          </div>
+          <div class="activity-content">
+            <h3>Private Adventure</h3>
+            <p>Custom route and pace for your group with photo stops at the best viewpoints.</p>
+            <div class="activity-actions">
+              <button class="book-button" onclick="navigateToBooking('quad-bike-sandboarding')">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Custom Booking Form -->
+  <section class="activities">
+    <div class="container">
+      <div class="custom-booking-form">
+        <div class="section-header">
+          <h2>Book Your Quad Adventure</h2>
+          <p>Choose your adrenaline level and secure your spot for the ultimate desert experience</p>
+        </div>
+        
+        <div class="package-card">
+          <div class="package-header">
+            <h3 class="package-title">60-min Quad Ride</h3>
+            <div class="price-container">
+              <div class="original-price">€75</div>
+              <div class="discount-badge">20% OFF</div>
+              <div class="final-price">€60</div>
+            </div>
+          </div>
+          <ul class="package-features">
+            <li>1-hour quad bike adventure</li>
+            <li>Safety equipment included</li>
+            <li>Professional guide</li>
+            <li>Scenic dune routes</li>
+            <li>Hotel pickup & drop-off</li>
+          </ul>
+          <button class="package-cta" onclick="navigateToBooking('quad-bike-sandboarding')">Book Quad Ride</button>
+        </div>
+        
+        <div class="package-card">
+          <div class="package-header">
+            <h3 class="package-title">120-min Quad + Sandboarding</h3>
+            <div class="price-container">
+              <div class="original-price">€120</div>
+              <div class="discount-badge">20% OFF</div>
+              <div class="final-price">€96</div>
+            </div>
+          </div>
+          <ul class="package-features">
+            <li>2-hour quad bike tour</li>
+            <li>Sandboarding session</li>
+            <li>Safety briefing & equipment</li>
+            <li>Multiple dune viewpoints</li>
+            <li>Refreshments included</li>
+            <li>Professional instruction</li>
+          </ul>
+          <button class="package-cta" onclick="navigateToBooking('quad-bike-sandboarding')">Book Combo Adventure</button>
+        </div>
+        
+        <div class="package-card">
+          <div class="package-header">
+            <h3 class="package-title">Private Adventure</h3>
+            <div class="price-container">
+              <div class="original-price">€180</div>
+              <div class="discount-badge">20% OFF</div>
+              <div class="final-price">€144</div>
+            </div>
+          </div>
+          <ul class="package-features">
+            <li>Custom route planning</li>
+            <li>Private guide</li>
+            <li>Extended photo stops</li>
+            <li>Flexible timing</li>
+            <li>Premium equipment</li>
+            <li>Lunch included</li>
+          </ul>
+          <button class="package-cta" onclick="navigateToBooking('quad-bike-sandboarding')">Book Private Adventure</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Merzouga Best Activities. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../app.js"></script>
+</body>
+</html>
+
+

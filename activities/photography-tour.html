@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desert Photography Tour – Merzouga Best Activities</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/zuume" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="../index.html" class="nav-link" style="display:flex;align-items:center;text-decoration:none;">
+          <img src="../logo.png" alt="Merzouga Best Activities" class="logo-image" />
+          <span class="brand-name">Merzouga Best Activities</span>
+        </a>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="../index.html#home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="../index.html#activities" class="nav-link">Activities</a></li>
+        <li class="nav-item"><a href="../index.html#book" class="nav-link">Book Now</a></li>
+        <li class="nav-item"><a href="../index.html#reviews" class="nav-link">Reviews</a></li>
+        <li class="nav-item"><a href="../index.html#contact" class="nav-link">Contact Us</a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" style="background-image: url('../images/photographer.jpg');">
+      <div class="hero-content">
+          <h1 class="hero-title">Desert Photography Tour</h1>
+          <p class="hero-subtitle">Capture the stunning beauty of the Sahara Desert</p>
+      </div>
+      <div class="hero-overlay"></div>
+  </section>
+
+  <!-- Custom Booking Form -->
+  <section class="activities">
+    <div class="container">
+      <div class="custom-booking-form">
+        <div class="section-header">
+          <h2>Book Your Photography Tour</h2>
+          <p>Choose from our professional photography packages and capture the magic of the Sahara</p>
+        </div>
+        
+        <div class="package-card">
+          <div class="package-header">
+            <h3 class="package-title">Mini</h3>
+            <div class="price-container">
+              <div class="original-price">€300</div>
+              <div class="discount-badge">20% OFF</div>
+              <div class="final-price">€240</div>
+            </div>
+          </div>
+          <ul class="package-features">
+            <li><strong>Duration:</strong> 1 Hour</li>
+            <li><strong>Pictures retouched:</strong> 6</li>
+            <li><strong>Pictures color corrected:</strong> 15</li>
+            <li><strong>Terms of editing:</strong> up to 20 days</li>
+            <li>Professional photographer guide</li>
+            <li>Best locations for golden hour</li>
+            <li>Basic photography tips included</li>
+          </ul>
+          <button class="package-cta" onclick="navigateToBooking('photography-tour')">Book Mini Package</button>
+        </div>
+        
+        <div class="package-card">
+          <div class="package-header">
+            <h3 class="package-title">Standard</h3>
+            <div class="price-container">
+              <div class="original-price">€350</div>
+              <div class="discount-badge">20% OFF</div>
+              <div class="final-price">€280</div>
+            </div>
+          </div>
+          <ul class="package-features">
+            <li><strong>Duration:</strong> 2 Hours</li>
+            <li><strong>Pictures retouched:</strong> 10</li>
+            <li><strong>Pictures color corrected:</strong> 25</li>
+            <li><strong>Terms of editing:</strong> up to 10 days</li>
+            <li>Professional photographer guide</li>
+            <li>Multiple scenic locations</li>
+            <li>Advanced photography techniques</li>
+            <li>Equipment recommendations</li>
+          </ul>
+          <button class="package-cta" onclick="navigateToBooking('photography-tour')">Book Standard Package</button>
+        </div>
+        
+        <div class="package-card">
+          <div class="package-header">
+            <h3 class="package-title">Optima</h3>
+            <div class="price-container">
+              <div class="original-price">€400</div>
+              <div class="discount-badge">20% OFF</div>
+              <div class="final-price">€320</div>
+            </div>
+          </div>
+          <ul class="package-features">
+            <li><strong>Duration:</strong> 2 Hours</li>
+            <li><strong>Pictures retouched:</strong> 10</li>
+            <li><strong>Pictures color corrected:</strong> 25</li>
+            <li><strong>Terms of editing:</strong> up to 10 days</li>
+            <li><strong>Short slo-mo video for Instagram</strong></li>
+            <li>Professional photographer guide</li>
+            <li>Premium locations access</li>
+            <li>Advanced editing techniques</li>
+            <li>Social media optimization</li>
+          </ul>
+          <button class="package-cta" onclick="navigateToBooking('photography-tour')">Book Optima Package</button>
+        </div>
+        
+        <div class="package-card">
+          <div class="package-header">
+            <h3 class="package-title">VIP</h3>
+            <div class="price-container">
+              <div class="original-price">€500</div>
+              <div class="discount-badge">20% OFF</div>
+              <div class="final-price">€400</div>
+            </div>
+          </div>
+          <ul class="package-features">
+            <li><strong>Duration:</strong> 3 Hours</li>
+            <li><strong>Pictures retouched:</strong> 10</li>
+            <li><strong>Pictures color corrected:</strong> 35</li>
+            <li><strong>Terms of editing:</strong> up to 10 days</li>
+            <li><strong>Short slo-mo video for Instagram</strong></li>
+            <li>Exclusive VIP photographer</li>
+            <li>Private desert locations</li>
+            <li>Premium equipment provided</li>
+            <li>Priority editing queue</li>
+            <li>Personal consultation session</li>
+          </ul>
+          <button class="package-cta" onclick="navigateToBooking('photography-tour')">Book VIP Package</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Merzouga Best Activities. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../app.js"></script>
+</body>
+</html>
+
+

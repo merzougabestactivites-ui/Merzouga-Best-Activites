@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merzouga Best Activities - Sahara Desert Adventures</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/zuume" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo.png" alt="Merzouga Best Activities" class="logo-image">
+                <span class="brand-name">Merzouga Best Activities</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#activities" class="nav-link">Activities</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#book" class="nav-link">Book Now</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#reviews" class="nav-link">Reviews</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact Us</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero" style="background-image: url('images/home-image.png');">
+        <div class="hero-content">
+            <h1 class="hero-title">WELCOME TO THE SAHARA</h1>
+            <p class="hero-subtitle">Experience Unforgettable Desert Adventures</p>
+            <button class="cta-button" onclick="scrollToSection('book')">Book Now</button>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Activities Section -->
+    <section id="activities" class="activities">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Desert Adventures</h2>
+                <p>Choose from our exciting range of desert activities and create memories that will last a lifetime.</p>
+            </div>
+            <div class="activities-grid">
+                <div class="activity-card" data-url="activities/camel-trekking.html" data-aos="fade-up" tabindex="0" role="button">
+                    <div class="activity-image">
+                        <img src="images/camel.jpg" alt="Camel Trekking">
+                    </div>
+                    <div class="activity-content">
+                        <h3>Camel Trekking</h3>
+                        <p>Ride across the Erg Chebbi dunes on traditional camels and witness a breathtaking Sahara sunrise or sunset.</p>
+                        <div class="activity-actions">
+                            <button class="book-button" onclick="event.stopPropagation(); navigateToBooking('camel-trekking')">Book Now</button>
+                            <a href="activities/camel-trekking.html" class="details-link">Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="activity-card" data-url="activities/quad-bike-sandboarding.html" data-aos="fade-up" data-aos-delay="150" tabindex="0" role="button">
+                    <div class="activity-image">
+                        <img src="images/quads.jpg" alt="Quad Bike & Sandboarding">
+                    </div>
+                    <div class="activity-content">
+                        <h3>Quad Bike & Sandboarding</h3>
+                        <p>Power through the dunes on a quad bike, then surf the golden sands with an exhilarating sandboarding session.</p>
+                        <div class="activity-actions">
+                            <button class="book-button" onclick="event.stopPropagation(); navigateToBooking('quad-bike-sandboarding')">Book Now</button>
+                            <a href="activities/quad-bike-sandboarding.html" class="details-link">Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="activity-card" data-url="activities/merzouga-4x4-excursion.html" data-aos="fade-up" data-aos-delay="300" tabindex="0" role="button">
+                    <div class="activity-image">
+                        <img src="images/4x4-2.jpg" alt="Merzouga 4x4 Tour">
+                    </div>
+                    <div class="activity-content">
+                        <h3>Merzouga 4x4 Tour</h3>
+                        <p>Explore around Erg Chebbi dunes by 4x4: nomad villages, seasonal lakes, fossils, and panoramic viewpoints.</p>
+                        <div class="activity-actions">
+                            <button class="book-button" onclick="event.stopPropagation(); navigateToBooking('merzouga-4x4-excursion')">Book Now</button>
+                            <a href="activities/merzouga-4x4-excursion.html" class="details-link">Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="activity-card" data-url="activities/overnight-desert-camp.html" data-aos="fade-up" data-aos-delay="450" tabindex="0" role="button">
+                    <div class="activity-image">
+                        <img src="images/nightcamps.jpg" alt="Overnight Desert Camp">
+                    </div>
+                    <div class="activity-content">
+                        <h3>Overnight Desert Camp</h3>
+                        <p>Sleep under starry skies in a Berber camp with dinner, music, and sunrise over the dunes.</p>
+                        <div class="activity-actions">
+                            <button class="book-button" onclick="event.stopPropagation(); navigateToBooking('overnight-desert-camp')">Book Now</button>
+                            <a href="activities/overnight-desert-camp.html" class="details-link">Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="activity-card" data-url="activities/photography-tour.html" data-aos="fade-up" data-aos-delay="600" tabindex="0" role="button">
+                    <div class="activity-image">
+                        <img src="images/photographer.jpg" alt="Desert Photography Tour">
+                    </div>
+                    <div class="activity-content">
+                        <h3>Desert Photography Tour</h3>
+                        <p>Golden-hour guided photography tour across the dunes with expert local knowledge.</p>
+                        <div class="activity-actions">
+                            <button class="book-button" onclick="event.stopPropagation(); navigateToBooking('photography-tour')">Book Now</button>
+                            <a href="activities/photography-tour.html" class="details-link">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book Now Section -->
+    <section id="book" class="booking">
+        <div class="container">
+            <div class="section-header">
+                <h2>Book Your Adventure</h2>
+                <p>Ready to explore the Sahara? Fill out the form below and we'll get back to you soon!</p>
+            </div>
+            <div class="booking-form-container">
+                <form class="booking-form" id="bookingForm">
+                    <!-- Personal Information -->
+                    <div class="form-section">
+                        <h3 class="section-title">Personal Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fullName">Full Name *</label>
+                                <input type="text" id="fullName" name="fullName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="date">Preferred Date *</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Activity & Package Selection -->
+                    <div class="form-section">
+                        <h3 class="section-title">Choose Your Adventure</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="activity">Select Activity *</label>
+                                <select id="activity" name="activity" required>
+                                    <option value="">Choose an activity</option>
+                                    <option value="camel-trekking">Camel Trekking</option>
+                                    <option value="quad-bike-sandboarding">Quad Bike & Sandboarding</option>
+                                    <option value="merzouga-4x4-excursion">Merzouga 4x4 Tour Excursion</option>
+                                    <option value="overnight-desert-camp">Overnight Desert Camp</option>
+                                    <option value="photography-tour">Desert Photography Tour</option>
+                                    <option value="custom">Custom Package</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="package">Select Package *</label>
+                                <select id="package" name="package" required>
+                                    <option value="">Choose a package</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pricing & Participants -->
+                    <div class="form-section">
+                        <h3 class="section-title">Pricing & Details</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="participants">Number of Participants *</label>
+                                <input type="number" id="participants" name="participants" min="1" max="20" value="1" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Package Price</label>
+                                <div id="priceSummary"></div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Total Price</label>
+                                <div class="total-price-display">
+                                    <span>€<span id="totalPrice">0</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Information -->
+                    <div class="form-section">
+                        <h3 class="section-title">Additional Information</h3>
+                        <div class="form-group">
+                            <label for="message">Special Requests or Preferences</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Any special requirements, dietary restrictions, or additional information..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Hidden anti-spam field -->
+                    <div class="form-group" style="display:none;">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" name="company" autocomplete="off">
+                    </div>
+
+                    <!-- Hidden email form for actual submission -->
+                    <form id="emailForm" action="https://formspree.io/f/mdkdpvlo" method="POST" style="display:none;">
+                        <input type="hidden" name="_subject" id="emailSubject">
+                        <input type="hidden" name="_replyto" id="emailReplyTo">
+                        <input type="hidden" name="message" id="emailMessage">
+                        <input type="hidden" name="_next" value="thank-you.html">
+                    </form>
+
+                    <button type="submit" class="submit-button">Submit Booking Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Guests Say</h2>
+                <p>Read testimonials from travelers who experienced the magic of the Sahara with us.</p>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card" data-aos="fade-up">
+                    <div class="review-header">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Sarah Johnson" class="reviewer-image">
+                        <div class="reviewer-info">
+                            <h4>Sarah Johnson</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"An absolutely magical experience! The camel trek at sunset was breathtaking, and our guide was incredibly knowledgeable. The desert camp was comfortable and the food was delicious. Highly recommend!"</p>
+                </div>
+                <div class="review-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="review-header">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Michael Chen" class="reviewer-image">
+                        <div class="reviewer-info">
+                            <h4>Michael Chen</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"The 4x4 tour was exhilarating! We explored parts of the desert we never would have seen otherwise. The team was professional and safety-conscious. A must-do adventure!"</p>
+                </div>
+                <div class="review-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="review-header">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Emma Rodriguez" class="reviewer-image">
+                        <div class="reviewer-info">
+                            <h4>Emma Rodriguez</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"The quad bike adventure was the highlight of our Morocco trip! The dunes were incredible and the sunset views were unforgettable. Professional service from start to finish."</p>
+                </div>
+                <div class="review-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="review-header">
+                        <img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=2070&auto=format&fit=crop" alt="Lina Farah" class="reviewer-image">
+                        <div class="reviewer-info">
+                            <h4>Lina Farah</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Unforgettable! The team went above and beyond. Our overnight camp with music around the fire was pure magic. We'll be back!"</p>
+                </div>
+                <div class="review-card" data-aos="fade-up" data-aos-delay="750">
+                    <div class="review-header">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=2069&auto=format&fit=crop" alt="James Parker" class="reviewer-image">
+                        <div class="reviewer-info">
+                            <h4>James Parker</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"The quad bikes and sandboarding combo was insane! Great safety briefing and amazing guides. Worth every minute."</p>
+                </div>
+                <div class="review-card" data-aos="fade-up" data-aos-delay="900">
+                    <div class="review-header">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=2069&auto=format&fit=crop" alt="Sofia Martinez" class="reviewer-image">
+                        <div class="reviewer-info">
+                            <h4>Sofia Martinez</h4>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Beautifully organized 4x4 excursion around Erg Chebbi. The views, the fossil stops, the tea with nomads—perfect day."</p>
+                </div>
+            </div>
+            
+            <!-- Review Sign-in Section -->
+            <div class="review-signin" data-aos="fade-up">
+                <h3>Share Your Experience</h3>
+                <form class="signin-form" id="reviewSigninForm">
+                    <div class="form-group">
+                        <label for="reviewEmail">Email Address</label>
+                        <input type="email" id="reviewEmail" name="reviewEmail" required>
+                        <div class="email-verification" id="emailVerification" style="display: none;">
+                            <p>Please check your email for verification code</p>
+                            <input type="text" id="verificationCode" name="verificationCode" placeholder="Enter 6-digit code" maxlength="6">
+                            <button type="button" id="verifyCodeBtn" class="verify-button">Verify Code</button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="reviewName">Your Name</label>
+                        <input type="text" id="reviewName" name="reviewName" required>
+                    </div>
+                    <button type="submit" class="signin-button">Sign In to Review</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>Get in touch with us to plan your perfect desert adventure.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+212 123 456 789</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p>+212 123 456 789</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>merzougabestactivites@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Merzouga, Sahara Desert, Morocco</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-instagram"></i>
+                        <div>
+                            <h4>Instagram</h4>
+                            <p>@merzouga_best_activites</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="contactName">Name</label>
+                            <input type="text" id="contactName" name="contactName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Email</label>
+                            <input type="email" id="contactEmail" name="contactEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Message</label>
+                            <textarea id="contactMessage" name="contactMessage" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <div class="map-section">
+                <div class="map-container">
+                    <i class="fas fa-map-pin"></i>
+                    <h4>Interactive Map - Merzouga, Sahara Desert</h4>
+                    <div class="map-placeholder">
+                        <p>Map integration coming soon</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Merzouga Best Activities. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

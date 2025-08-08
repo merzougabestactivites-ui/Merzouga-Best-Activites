@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Overnight Desert Camp – Merzouga Best Activities</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/zuume" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="../index.html" class="nav-link" style="display:flex;align-items:center;text-decoration:none;">
+          <img src="../logo.png" alt="Merzouga Best Activities" class="logo-image" />
+          <span class="brand-name">Merzouga Best Activities</span>
+        </a>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="../index.html#home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="../index.html#activities" class="nav-link">Activities</a></li>
+        <li class="nav-item"><a href="../index.html#book" class="nav-link">Book Now</a></li>
+        <li class="nav-item"><a href="../index.html#reviews" class="nav-link">Reviews</a></li>
+        <li class="nav-item"><a href="../index.html#contact" class="nav-link">Contact Us</a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" style="background-image: url('../images/nightcamps.jpg');">
+      <div class="hero-content">
+          <h1 class="hero-title">Overnight Desert Camp</h1>
+          <p class="hero-subtitle">Sleep under the stars in our luxury Berber camp</p>
+      </div>
+      <div class="hero-overlay"></div>
+  </section>
+
+  <!-- Custom Booking Form -->
+  <section class="activities">
+    <div class="container">
+      <div class="custom-booking-form">
+        <div class="section-header">
+          <h2>Book Your Luxury Desert Camp Experience</h2>
+          <p>Choose your perfect luxury camp package and create unforgettable memories under the Sahara stars</p>
+        </div>
+        
+        <div class="package-card">
+          <div class="package-header">
+            <h3 class="package-title">Luxury Desert Camp</h3>
+            <div class="price-container">
+              <div class="original-price">€220</div>
+              <div class="discount-badge">20% OFF</div>
+              <div class="final-price">€176</div>
+            </div>
+          </div>
+          <div class="package-details">
+            <div class="night-counter">
+              <span class="counter-label">Number of Nights:</span>
+              <div class="counter-controls">
+                <button class="counter-btn" onclick="updateNights(-1)">-</button>
+                <span id="nightCount">1</span>
+                <button class="counter-btn" onclick="updateNights(1)">+</button>
+              </div>
+              <div class="total-price">
+                <span>Total: €<span id="totalPrice">176</span></span>
+              </div>
+            </div>
+          </div>
+          <ul class="package-features">
+            <li>Luxury Berber tent with comfortable bedding</li>
+            <li>Traditional Moroccan dinner with local specialties</li>
+            <li>Live Berber music and entertainment</li>
+            <li>Sunset camel trek to the camp</li>
+            <li>Stargazing experience with telescope</li>
+            <li>Sunrise over the dunes</li>
+            <li>Traditional breakfast</li>
+            <li>Professional photography service</li>
+            <li>Private bathroom facilities</li>
+            <li>24/7 guide assistance</li>
+          </ul>
+          <button class="package-cta" onclick="navigateToBooking('overnight-desert-camp')">Book Luxury Camp</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Merzouga Best Activities. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../app.js"></script>
+  <script>
+    function updateNights(change) {
+      const nightCountElement = document.getElementById('nightCount');
+      const totalPriceElement = document.getElementById('totalPrice');
+      let currentNights = parseInt(nightCountElement.textContent);
+      
+      currentNights = Math.max(1, Math.min(7, currentNights + change));
+      nightCountElement.textContent = currentNights;
+      
+      const basePrice = 176;
+      const totalPrice = basePrice * currentNights;
+      totalPriceElement.textContent = totalPrice;
+    }
+  </script>
+</body>
+</html>
+
+

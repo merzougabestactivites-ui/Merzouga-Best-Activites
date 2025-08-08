@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Camel Trekking – Merzouga Best Activities</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/zuume" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="../index.html" class="nav-link" style="display:flex;align-items:center;text-decoration:none;">
+          <img src="../logo.png" alt="Merzouga Best Activities" class="logo-image" />
+          <span class="brand-name">Merzouga Best Activities</span>
+        </a>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="../index.html#home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="../index.html#activities" class="nav-link">Activities</a></li>
+        <li class="nav-item"><a href="../index.html#book" class="nav-link">Book Now</a></li>
+        <li class="nav-item"><a href="../index.html#reviews" class="nav-link">Reviews</a></li>
+        <li class="nav-item"><a href="../index.html#contact" class="nav-link">Contact Us</a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" style="background-image: url('../images/camel.jpg');">
+      <div class="hero-content">
+          <h1 class="hero-title">Camel Trekking</h1>
+          <p class="hero-subtitle">Experience the traditional way of crossing the Sahara Desert</p>
+      </div>
+      <div class="hero-overlay"></div>
+  </section>
+
+  <section class="activities">
+    <div class="container">
+      <div class="section-header">
+        <h2>Experience Overview</h2>
+        <p>Ride gentle camels guided by local experts through sweeping dunes, visit panoramic viewpoints, and enjoy tea in Berber style.</p>
+      </div>
+
+      <div class="activities-grid">
+        <div class="activity-card">
+          <div class="activity-image">
+            <img src="../images/Sunset-Trek.jpg" alt="Sunset Camel Trek" />
+          </div>
+          <div class="activity-content">
+            <h3>Sunset Trek – 2 hours</h3>
+            <p>Depart in the late afternoon to catch golden-hour light and a dramatic sunset from high dunes.</p>
+            <div class="activity-actions">
+              <button class="book-button" onclick="navigateToBooking('camel-trekking')">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="activity-card">
+          <div class="activity-image">
+            <img src="../images/Overnight-Trek.jpg" alt="Overnight Camel Trek" />
+          </div>
+          <div class="activity-content">
+            <h3>Overnight Trek – Camp Experience</h3>
+            <p>Ride to our Berber camp, enjoy dinner, music under the stars, and sunrise return the next morning.</p>
+            <div class="activity-actions">
+              <button class="book-button" onclick="navigateToBooking('camel-trekking')">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="activity-card">
+          <div class="activity-image">
+            <img src="/images/Sunrise-Trek.png" alt="Sunrise Camel Trek" />
+          </div>
+          <div class="activity-content">
+            <h3>Sunrise Trek – 2 hours</h3>
+            <p>Early departure to watch the Sahara awaken. Perfect for photographers and romantics.</p>
+            <div class="activity-actions">
+              <button class="book-button" onclick="navigateToBooking('camel-trekking')">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Custom Booking Form -->
+  <section class="activities">
+    <div class="container">
+      <div class="custom-booking-form">
+        <div class="section-header">
+          <h2>Book Your Camel Trek</h2>
+          <p>Choose from our carefully crafted packages and secure your spot in the Sahara</p>
+        </div>
+        
+        <div class="package-card">
+          <div class="package-header">
+            <h3 class="package-title">Sunset Trek</h3>
+            <div class="price-container">
+              <div class="original-price">€85</div>
+              <div class="discount-badge">20% OFF</div>
+              <div class="final-price">€68</div>
+            </div>
+          </div>
+          <ul class="package-features">
+            <li>2-hour camel trek at golden hour</li>
+            <li>Professional Berber guide</li>
+            <li>Traditional tea ceremony</li>
+            <li>Sunset photography stops</li>
+            <li>Hotel pickup & drop-off</li>
+          </ul>
+          <button class="package-cta" onclick="navigateToBooking('camel-trekking')">Book Sunset Trek</button>
+        </div>
+        
+        <div class="package-card">
+          <div class="package-header">
+            <h3 class="package-title">Overnight Camp Experience</h3>
+            <div class="price-container">
+              <div class="original-price">€145</div>
+              <div class="discount-badge">20% OFF</div>
+              <div class="final-price">€116</div>
+            </div>
+          </div>
+          <ul class="package-features">
+            <li>Sunset camel trek to camp</li>
+            <li>Traditional Berber dinner</li>
+            <li>Desert music & campfire</li>
+            <li>Overnight in comfortable tent</li>
+            <li>Sunrise return trek</li>
+            <li>Breakfast included</li>
+          </ul>
+          <button class="package-cta" onclick="navigateToBooking('camel-trekking')">Book Overnight Experience</button>
+        </div>
+        
+        <div class="package-card">
+          <div class="package-header">
+            <h3 class="package-title">Sunrise Photography Trek</h3>
+            <div class="price-container">
+              <div class="original-price">€95</div>
+              <div class="discount-badge">20% OFF</div>
+              <div class="final-price">€76</div>
+            </div>
+          </div>
+          <ul class="package-features">
+            <li>Early morning departure</li>
+            <li>Photography guidance</li>
+            <li>Multiple scenic stops</li>
+            <li>Light breakfast included</li>
+            <li>Professional photo tips</li>
+          </ul>
+          <button class="package-cta" onclick="navigateToBooking('camel-trekking')">Book Sunrise Trek</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Merzouga Best Activities. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../app.js"></script>
+</body>
+</html>
+
+
